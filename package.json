@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/alexis89x/tennis-fit-telegram-bot/issues"
   },
-  "homepage": "https://github.com/alexis89x/tennis-fit-telegram-bot#readme"
+  "homepage": "https://github.com/alexis89x/tennis-fit-telegram-bot#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "telegraf": "^4.3.0"
+  }
 }
