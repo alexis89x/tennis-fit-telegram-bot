@@ -1,0 +1,26 @@
+{
+  "name": "tennis-fit-telegram-bot",
+  "version": "0.0.1",
+  "description": "Un bot Telegram per ottenere informazioni sui tornei FIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexis89x/tennis-fit-telegram-bot.git"
+  },
+  "keywords": [
+    "tennis",
+    "fit",
+    "italia",
+    "atp",
+    "wta"
+  ],
+  "author": "Alessandro Piana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexis89x/tennis-fit-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/alexis89x/tennis-fit-telegram-bot#readme"
+}
