@@ -2,7 +2,7 @@ import {Context} from "telegraf";
 import {ICompetition} from "./models/ICompetition";
 
 const { TELEGRAM_BOT_TOKEN } = require('./secret/secret');
-const { getCompetitionInfo } = require('./utils/data.service');
+const { getCompetitionInfo, getTournaments } = require('./utils/data.service');
 const { Telegraf } = require('telegraf');
 const axios = require('axios');
 
@@ -30,6 +30,21 @@ bot.command('info', ctx => {
         console.error(err);
       });
 });
+
+bot.command('milano', ctx => {
+    const [ commandName, matchId ] = ctx.update.message.text.split(' ');
+    console.log('Request for match ' + matchId);
+    // ctx.reply('Read info...');
+    getTournaments()
+        .then((resp: any) => {
+            ctx.reply('FOUND');
+        })
+        .catch(err => {
+            ctx.reply(`ERRORE: Torneo non trovato.`);
+            console.error(err);
+        });
+});
+
 
 bot.on('message', ctx => {
   ctx.reply('Received');
